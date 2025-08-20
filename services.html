@@ -1,74 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services - Bright Content Studio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services | Bright Content Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" href="image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>✨</text></svg>">
 </head>
 <body>
-  <!-- Header / Navigation -->
+  <!-- Header -->
   <header>
     <div class="container">
-      <div class="logo">Bright Content Studio</div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a>
-            <ul class="dropdown">
-              <li><a href="#newsletter-design">Newsletter Design</a></li>
-              <li><a href="#email-marketing">Email Marketing Setup</a></li>
-              <li><a href="#analytics-reporting">Analytics & Reporting</a></li>
-            </ul>
-          </li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <a href="index.html" class="logo">Bright Content Studio</a>
+
+      <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+      </div>
+
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
       </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
     </div>
   </header>
 
-  <!-- Services Hero Section -->
-  <section id="services-hero">
-    <div class="container hero-text">
-      <h1>Our Services</h1>
-      <p>Professional newsletter solutions for busy Canadian financial consultants.</p>
+  <!-- Services Section -->
+  <section class="services-section">
+    <div class="container">
+      <h2>How I Help Financial Consultants</h2>
+      <p>I help you turn emails into trusted touchpoints that build credibility and convert leads — without the fluff.</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Newsletter Design</h3>
+          <p>Beautiful, brand-aligned emails that your clients are proud to receive. No templates. No clutter. Just clean, professional design that reflects your expertise.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Email Marketing Setup</h3>
+          <p>From scratch to launch — I set up your email system (Mailchimp, Brevo, or your platform) so you can start sending consistent, high-impact emails.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Analytics & Reporting</h3>
+          <p>Monthly reports that show opens, clicks, and conversions — so you know what’s working and where to improve.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Newsletter Design Section -->
-  <section id="newsletter-design">
-    <div class="container service">
-      <h2>Newsletter Design</h2>
-      <p>Custom newsletter design that reflects your brand and engages your clients.</p>
-      <ul>
-        <li>Fully branded templates</li>
-        <li>Responsive design for all devices</li>
-        <li>PDF and HTML versions for easy use</li>
-      </ul>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Bright Content Studio. All rights reserved.</p>
+      <p>Contact: <a href="mailto:hello@brightcontentstudio.com">hello@brightcontentstudio.com</a></p>
     </div>
-  </section>
+  </footer>
 
-  <!-- Email Marketing Setup Section -->
-  <section id="email-marketing">
-    <div class="container service">
-      <h2>Email Marketing Setup</h2>
-      <p>We set up your complete email marketing system, so you don’t have to worry about technical details.</p>
-      <ul>
-        <li>Integration with platforms like MailerLite, Mailchimp, or Zoho</li>
-        <li>Automated email campaigns</li>
-        <li>Subscriber management and segmentation</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Analytics & Reporting Section -->
-  <section id="analytics-reporting">
-    <div class="container service">
-      <h2>Analytics & Reporting</h2>
+  <script src="script.js"></script>
+</body>
+</html>      <h2>Analytics & Reporting</h2>
       <p>Track the performance of your newsletters and make data-driven decisions.</p>
       <ul>
         <li>Open rates, click-through rates, and engagement metrics</li>
