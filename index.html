@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bright Content Studio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bright Content Studio | Premium Email Design for Financial Consultants</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>✨</text></svg>">
 </head>
 <body>
-  <!-- Header / Navigation -->
+  <!-- Header -->
   <header>
     <div class="container">
-      <div class="logo">Bright Content Studio</div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a>
-            <ul class="dropdown">
-              <li><a href="services.html#newsletter-design">Newsletter Design</a></li>
-              <li><a href="services.html#email-marketing">Email Marketing Setup</a></li>
-              <li><a href="services.html#analytics-reporting">Analytics & Reporting</a></li>
-            </ul>
-          </li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <a href="index.html" class="logo">Bright Content Studio</a>
+
+      <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+      </div>
+
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
       </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section id="hero">
-    <div class="container hero-text">
-      <h1>Professional Newsletters for Canadian Financial Consultants</h1>
-      <p>Save time, build client trust, and stay top-of-mind — we handle everything for you.</p>
-      <a href="contact.html" class="cta-button">Request a Free Sample Newsletter</a>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Premium Email Design,<br>Without the Agency Price</h1>
+        <p>For financial consultants in Canada who want emails that build trust, grow their client base, and convert leads — without the fluff.</p>
+        <a href="contact.html" class="btn btn-large">Get a Free 5-Point Email Audit</a>
+      </div>
+
+      <div class="mockup-container">
+        <img src="images/email-1.png" alt="Quarterly Market Insights Email">
+        <img src="images/email-2.png" alt="Retirement Planning Checklist Email">
+        <img src="images/email-3.png" alt="Tax Strategy Reminder Email">
+      </div>
     </div>
   </section>
 
-  <!-- About Preview -->
-  <section id="about-preview">
+  <!-- Footer -->
+  <footer>
     <div class="container">
-      <h2>Why Bright Content Studio?</h2>
-      <p>We help financial consultants in Canada look professional and grow their client base with consistent, high-quality newsletters.</p>
-      <ul>
-        <li>Done-for-you newsletter design & copy</li>
-        <li>Full email system setup if needed</li>
-        <li>Templates optimized for high engagement</li>
-      </ul>
-      <a href="about.html" class="cta-button small">Learn More</a>
+      <p>&copy; 2025 Bright Content Studio. All rights reserved.</p>
+      <p>Contact: <a href="mailto:hello@brightcontentstudio.com">hello@brightcontentstudio.com</a></p>
     </div>
-  </section>
+  </footer>
 
-  <!-- Services Preview -->
-  <section id="services-preview">
-    <div class="container">
-      <h2>Our Services</h2>
-      <div class="service-cards">
-        <div class="service-card">
-          <h3>Basic</h3>
-          <p>Newsletter design + copy delivered as HTML + PDF preview.</p>
-        </div>
+  <script src="script.js"></script>
+</body>
+</html>        </div>
         <div class="service-card">
           <h3>Standard</h3>
           <p>Design + copy + upload into your email platform (Mailchimp, MailerLite, etc.).</p>
